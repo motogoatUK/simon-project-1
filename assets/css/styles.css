@@ -1,0 +1,17 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
+/* set CSS variables */
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Sriracha", cursive;
+  --shades-light: #f0f4f3;
+  --accent-light: #ad9563;
+  --main-brand: #94b6a6;
+  --accent-dark: #827e7d;
+  --shades-dark: #52603d;
+}
+/* Global Styles */
+body {
+  font-family: var(--primary-font);
+}
+
