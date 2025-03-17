@@ -16,4 +16,7 @@ Users of the website include Spectators, riders (members) and supporters
 - Find club news & information
 - Become a member of the club
 - Book into race events
+### Project board
+Contains all the user stories which have been assigned labels for must-have, should-have, could-have (MSC), based on the above goals and project constraints.
 
+Project can be viewed here: [User centric project1](https://github.com/users/motogoatUK/projects/4)
