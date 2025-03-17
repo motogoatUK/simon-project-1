@@ -46,7 +46,8 @@ The colour scheme was generated from [colormind.io](colormind.io) and has shades
 ### Typography
 The fonts chosen for this project are Sriracha as the display font, chosen for it's active look, paired with Roboto as an easy to read sans-serif font.
 
-
+## Issues Encountered
+The suggested colour palette was tested for contrast using the contrast checker at [https://webaim.org/](https://webaim.org/resources/contrastchecker/) but failed accessibility checks. I manually adjusted the luminosity of the previously generated colours to attain the correct contrast levels and pass the WCAG AAA checks.
 
 ## Credits
 

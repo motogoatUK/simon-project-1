@@ -12,6 +12,14 @@
 }
 /* Global Styles */
 body {
+    background-color: var(--shades-light);
   font-family: var(--primary-font);
+  color:var(--main-brand);
+}
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--accent-dark);
 }
 
