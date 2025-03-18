@@ -4,11 +4,11 @@
 :root {
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Sriracha", cursive;
-  --shades-light: #f0f4f3;
-  --accent-light: #ad9563;
-  --main-brand: #94b6a6;
-  --accent-dark: #827e7d;
-  --shades-dark: #52603d;
+  --shades-light: #f0f2f2;
+  --accent-light: #a99859;
+  --main-brand: #3c574a;
+  --accent-dark: #5f5032;
+  --shades-dark: #2d4230;
 }
 /* Global Styles */
 body {
@@ -22,4 +22,20 @@ h3 {
     font-family: var(--secondary-font);
     color: var(--accent-dark);
 }
+/* Navigation styles */
+nav {
+    background-color: var(--main-brand);
+    color: var(--shades-light);
+}
+nav:hover {
+    color: var(--accent-light);
+}
+
+/* Footer / contact */
+#contact {
+    background-color: var(--main-brand);
+    color: var(--shades-light);
+    padding-bottom: 3rem;
+  }
+
 

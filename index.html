@@ -11,15 +11,41 @@
     <!--Custom CSS-->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-<!-- Navigation -->
-Nav
+<!--Classes added to body works with mt-auto on footer to ensure it always stays at the bottom of page
+##  d-flex creates a full-screen width flexbox container ## -->
+<body class="d-flex flex-column min-vh-100">
+<!-- Navigation [ based on code from https://getbootstrap.com/docs/5.3/components/navbar/ ] -->  
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <!-- ms-auto aligns navbar items to the right -->
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Fixtures</a>
+          <a class="nav-link" href="#">Results</a>
+          <a class="nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
 <!-- Header -->
+ <header>
 <h1 class="display-3">Browngrass Motocross Club</h1>
+ </header>
 <!-- Main -->
 Main
-<!-- Footer -->
-Footer
+<!-- Footer / Contact section -->
+<!-- mt-auto added to push footer to the bottom of the page -->
+<footer id="contact" class="mt-auto">
+    Footer Contact
+</footer>
 <!-- JS Scripts go here so that page loads first (DOM) -->
 <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

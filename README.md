@@ -35,20 +35,21 @@ The colour scheme was generated from [colormind.io](colormind.io) and has shades
 
 
 ![Colour Swatch](assets/images/dc-p1-colourchart.png)
-| variable name | color (hex) | 
-| --- | --- | 
-| shades-light  |	#F0F4F3 | 
-| accent-light	| #AD9563 | 
-| main-brand	|  #94B6A6 | 
-| accent-dark	| #827E7D | 
-| shades-dark	| #52603D  |
 
 ### Typography
 The fonts chosen for this project are Sriracha as the display font, chosen for it's active look, paired with Roboto as an easy to read sans-serif font.
 
 ## Issues Encountered
-The suggested colour palette was tested for contrast using the contrast checker at [https://webaim.org/](https://webaim.org/resources/contrastchecker/) but failed accessibility checks. I manually adjusted the luminosity of the previously generated colours to attain the correct contrast levels and pass the WCAG AAA checks.
-
+The suggested colour palette was tested for contrast using the contrast checker at [https://webaim.org/](https://webaim.org/resources/contrastchecker/) but failed accessibility checks. I manually adjusted the luminosity of some of the previously generated colours to attain the correct contrast levels and pass the WCAG AAA checks.
+| variable name | old colour (hex) | new colour 
+| --- | --- | --- |
+| shades-light  | #f0f4f3 | #f0f2f2 
+| accent-light	| #ad9563 | #a99859
+| main-brand	| #94b6a6 | #3c574a
+| accent-dark	| #827e7d | #5f5032
+| shades-dark	| #52603d | #204230
 ## Credits
+Code snippets used from [getbootstrap.com](https://getbootstrap.com/docs/5.3/):
+- Navbar  
 
 png images optimised by [TinyPNG](https://tinypng.com)
