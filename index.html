@@ -20,7 +20,7 @@
 <body class="d-flex flex-column min-vh-100">
 <!-- Navigation [ based on code from https://getbootstrap.com/docs/5.3/components/navbar/ ] -->  
 <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-    <div class="container-fluid">
+    <div class="container-xxl">
       <a class="navbar-brand" href="index.html">
         <img src="assets/images/bmc-logo.png" alt="Logo" class="d-inline-block align-text-top">
       </a>
@@ -34,21 +34,33 @@
           <a class="nav-link" href="#">Fixtures</a>
           <a class="nav-link" href="#">Results</a>
           <a class="nav-link" href="#">Contact</a>
+          <a href="#" class="btn custom-button-filled ms-auto">Join Us!</a>
         </div>
       </div>
     </div>
   </nav>
 
 <!-- Header -->
- <header>
-<h1 class="display-3">Browngrass Motocross Club</h1>
+ <header class="container">
+<div class="row">
+    <div class="col-12 col-xl-6"><h1 class="display-3">Browngrass Motocross</h1></div>
+    <div class="col-12 col-xl-6">Picture</div>
+</div>
  </header>
-<!-- Main -->
-Main
+<!-- Main - holds key sections of the page -->
+<main>
+    <section id="info" class="container">
+        <div class="row">
+            <div class="col-12"><h3>Club Information</h3></div>
+        </div>
+
+    </section>
+</main>
 <!-- Footer / Contact section -->
 <!-- mt-auto added to push footer to the bottom of the page -->
-<footer id="contact" class="mt-auto">
-    Footer Contact
+<footer id="contact" class="container-xxl mt-auto">
+    <h3>Contact Information</h3>
+    <p>Email: browngrass@motogoat.co.uk</p>
 </footer>
 <!-- JS Scripts go here so that page loads first (DOM) -->
 <!--Bootstrap JS-->

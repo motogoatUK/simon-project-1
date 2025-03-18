@@ -1,5 +1,6 @@
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap");
+
 /* set CSS variables */
 :root {
   --primary-font: "Roboto", sans-serif;
@@ -10,32 +11,62 @@
   --accent-dark: #5f5032;
   --shades-dark: #2d4230;
 }
+
 /* Global Styles */
 body {
-    background-color: var(--shades-light);
+  background-color: var(--shades-light);
   font-family: var(--primary-font);
-  color:var(--main-brand);
+  color: var(--main-brand);
 }
 h1,
 h2,
 h3 {
-    font-family: var(--secondary-font);
+  font-family: var(--secondary-font);
+  color: var(--accent-dark);
+}
+/* Custom Buttons (instead of using bootstraps button colours) */
+.custom-button-filled {
+    border: 2px solid var(--shades-dark);
+    background-color: var(--shades-dark);
+    color: var(--shades-light);
+}
+.custom-button-filled:hover {
+    border: 2px solid var(--shades-light);
+    background-color: var(--shades-light);
     color: var(--accent-dark);
+}
+.custom-button-outline {
+    border: 3px solid var(--shades-dark);
+    background-color:var(--accent-dark);
+    color: var(--shades-dark);
+}
+.custom-button-outline:hover {
+    border: 3px solid var(--shades-dark);
+    background-color: var(--shades-dark);
+    color: var(--shades-light);
 }
 /* Navigation styles */
 nav {
-    background-color: var(--main-brand);
-    color: var(--shades-light);
+  background-color: var(--main-brand);
+  color: var(--shades-light);
 }
 nav:hover {
-    color: var(--accent-light);
+  color: var(--accent-light);
 }
-
+/* Override boostrap class to make menu dropdown right aligned */
+.navbar-collapse {
+    margin:0 auto;
+    text-align:right;
+}
 /* Footer / contact */
 #contact {
-    background-color: var(--main-brand);
-    color: var(--shades-light);
-    padding-bottom: 3rem;
-  }
-
-
+  background-color: var(--main-brand);
+  color: var(--shades-light);
+  padding-bottom: 2rem;
+}
+/* override dark h1,h2,h3 font colour to make it light on the dark footer */
+#contact h1,
+#contact h2,
+#contact h3 {
+  color: var(--shades-light);
+}
