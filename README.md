@@ -52,4 +52,7 @@ The suggested colour palette was tested for contrast using the contrast checker 
 Code snippets used from [getbootstrap.com](https://getbootstrap.com/docs/5.3/):
 - Navbar  
 
-png images optimised by [TinyPNG](https://tinypng.com)
+png images optimised by [TinyPNG](https://tinypng.com)  
+
+AI images created with [Gemini AI](https://gemini.google.com/) using prompts such as _"Create a photorealistic or stylized image in 4K resolution of a motocross track, viewed from above. The composition should be balanced and friendly. The color palette should be bright and positive, conveying enthusiasm and energy. The environment should be a motocross track or a related outdoor rural setting. The camera angle should be from above. Add natural lighting to create a warm and inviting atmosphere."_
+

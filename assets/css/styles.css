@@ -25,37 +25,39 @@ h3 {
   color: var(--accent-dark);
 }
 #header {
-    background: url("../images/sunset-mx-riders-ai.png") top / cover no-repeat;
-    font-size:1.2rem;
+  background: url("../images/sunset-mx-riders-ai.png") top / cover no-repeat;
+  font-size: 1.2rem;
 }
 /* add a semi-transparent background to the header row so that the darker text is legible against the background image */
 #header .row {
-    background-color: rgba(240,242,242,.65);
+  background-color: rgba(240, 242, 242, 0.65);
 }
 #header img {
-    padding: 5%;
+  padding: 5%;
 }
+
 /* Custom Buttons (instead of using bootstraps button colours) */
 .custom-button-filled {
-    border: 2px solid var(--shades-dark);
-    background-color: var(--shades-dark);
-    color: var(--shades-light);
+  border: 2px solid var(--shades-dark);
+  background-color: var(--shades-dark);
+  color: var(--shades-light);
 }
 .custom-button-filled:hover {
-    border: 2px solid var(--shades-light);
-    background-color: var(--shades-light);
-    color: var(--shades-dark);
+  border: 2px solid var(--shades-light);
+  background-color: var(--shades-light);
+  color: var(--shades-dark);
 }
 .custom-button-outline {
-    border: 3px solid var(--accent-dark);
-    background-color:var(--shades-light);
-    color: var(--accent-dark);
+  border: 3px solid var(--accent-dark);
+  background-color: var(--shades-light);
+  color: var(--accent-dark);
 }
 .custom-button-outline:hover {
-    border: 3px solid var(--accent-dark);
-    background-color: var(--accent-dark);
-    color: var(--shades-light);
+  border: 3px solid var(--accent-dark);
+  background-color: var(--accent-dark);
+  color: var(--shades-light);
 }
+
 /* Navigation styles */
 nav {
   background-color: var(--main-brand);
@@ -66,9 +68,17 @@ nav:hover {
 }
 /* Override boostrap class to make menu dropdown right aligned */
 .navbar-collapse {
-    margin:0 auto;
-    text-align:right;
+  margin: 0 auto;
+  text-align: right;
 }
+
+/* Main section */
+#info {
+  background-color: var(--shades-light);
+  /* min-height to make section stretch towards footer section */
+  min-height: 35vh;
+}
+
 /* Footer / contact */
 #contact {
   background-color: var(--main-brand);
@@ -80,4 +90,12 @@ nav:hover {
 #contact h2,
 #contact h3 {
   color: var(--shades-light);
+}
+
+/* Media Queries */
+/* Add a body background image to screens above 576px wide (bootstrap sm breakpoint) */
+@media screen and (min-width: 576px) {
+  body {
+    background: url("../images/mx-track-above-ai.jpg") top / cover no-repeat;
+  }
 }
