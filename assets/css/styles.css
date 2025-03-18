@@ -91,6 +91,15 @@ nav:hover {
 #contact h3 {
   color: var(--shades-light);
 }
+#contact .social-links i {
+    color: var(--shades-light);
+    font-size: 1.8rem;
+    transition: color 0.4s ease-in-out;
+    padding-right:0.2rem;
+  }
+#contact .social-links i:hover {
+    color: var(--accent-light);
+  }
 
 /* Media Queries */
 /* Add a body background image to screens above 576px wide (bootstrap sm breakpoint) */

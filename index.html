@@ -47,7 +47,7 @@
     <p>Browngrass Motocross is a vibrant club for motocross enthusiasts of all skill levels. We provide a supportive community, fostering camaraderie and a shared passion
          for the adrenaline-pumping world of motocross. Our mission is to create a fun, inclusive environment for riders to connect, grow, and share their
           love of this exhilarating sport.</p>
-          <a href="#" class="btn custom-button-outline ms-auto">Join Us!</a>
+          <a href="#" class="btn custom-button-outline my-4">Join Us!</a>
     </div>
     <div class="col-12 col-xl-6">
         <img src="assets/images/bmc-team-ai.png" alt="Browngrass motocross Team photo" class="d-block w-100">
@@ -58,7 +58,15 @@
 <main>
     <section id="info" class="container">
         <div class="row">
-            <div class="col-12"><h3>Club Information</h3></div>
+            <div class="col-12">
+                <h3>Club News &amp; Information</h3>
+                <h4>Latest News:</h4>
+                <p>Congratulations to Simon Thornes who won the last round in the Veterans division.</p>
+                <h5>Our next event will be at ... on ...</h5>
+                <p>Please note: Paddock access gates will only be open between 7am and 11pm.</p>
+                <hr>
+                <p>More information</p>
+            </div>
         </div>
 
     </section>
@@ -67,8 +75,31 @@
 <!-- mt-auto added to push footer to the bottom of the page -->
 <footer id="contact" class="mt-auto">
     <div class="container-xxl">
-    <h3>Contact Information</h3>
-    <p>Email: browngrass@motogoat.co.uk</p>
+    <h3>Get in touch!</h3>
+    <!-- Hide icons from screen readers and show text instead using FontAwesome's built-in fa-sr-only class -->
+    <p>
+        <i class="fa-solid fa-at" title="Email" aria-hidden="true"></i>
+        <span class="fa-sr-only">Email:</span> browngrass@motogoat.co.uk
+        <address>
+            <i class="fa-solid fa-envelope" title="Address" aria-hidden="true"></i>
+            <span class="fa-sr-only">Address:</span>
+            123 Rider Street, <br>
+            Localsville,<br>
+            The Midlands
+        </address>
+    </p>
+    <!-- Social Links -->
+    <div class="social-links my-2">
+        <!--Instagram-->
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferer">
+            <i aria-hidden="true" class="fa-brands fa-instagram"></i><span class="fa-sr-only">Our Instagram (opens in new tab)</span></a>
+        <!--Facebook-->
+        <a href="https://facebook.com/" target="_blank" rel="noopener noreferer">
+            <i aria-hidden="true" class="fa-brands fa-square-facebook"></i><span class="fa-sr-only">Our Facebook page (opens in new tab)</span></a>
+        <!--Twitter(X) -->
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferer">
+            <i aria-hidden="true" class="fa-brands fa-x-twitter"></i><span class="fa-sr-only">Our X[Twitter] account (opens in new tab)</span></a>
+    </div>
     </div>
 </footer>
 <!-- JS Scripts go here so that page loads first (DOM) -->
