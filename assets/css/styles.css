@@ -24,6 +24,17 @@ h3 {
   font-family: var(--secondary-font);
   color: var(--accent-dark);
 }
+#header {
+    background: url("../images/sunset-mx-riders-ai.png") top / cover no-repeat;
+    font-size:1.2rem;
+}
+/* add a semi-transparent background to the header row so that the darker text is legible against the background image */
+#header .row {
+    background-color: rgba(240,242,242,.65);
+}
+#header img {
+    padding: 5%;
+}
 /* Custom Buttons (instead of using bootstraps button colours) */
 .custom-button-filled {
     border: 2px solid var(--shades-dark);
@@ -33,16 +44,16 @@ h3 {
 .custom-button-filled:hover {
     border: 2px solid var(--shades-light);
     background-color: var(--shades-light);
-    color: var(--accent-dark);
-}
-.custom-button-outline {
-    border: 3px solid var(--shades-dark);
-    background-color:var(--accent-dark);
     color: var(--shades-dark);
 }
+.custom-button-outline {
+    border: 3px solid var(--accent-dark);
+    background-color:var(--shades-light);
+    color: var(--accent-dark);
+}
 .custom-button-outline:hover {
-    border: 3px solid var(--shades-dark);
-    background-color: var(--shades-dark);
+    border: 3px solid var(--accent-dark);
+    background-color: var(--accent-dark);
     color: var(--shades-light);
 }
 /* Navigation styles */
