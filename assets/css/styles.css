@@ -18,6 +18,7 @@ body {
   font-family: var(--primary-font);
   color: var(--main-brand);
 }
+
 h1,
 h2,
 h3 {
@@ -78,7 +79,7 @@ nav {
     padding-top:0.5rem;
   }
   #header img {
-    padding: 5%;
+    border: var(--accent-light) inset 5px;
   }
 
 /* Main section */
@@ -86,6 +87,18 @@ nav {
   background-color: var(--shades-light);
   /* min-height to make section stretch towards footer section */
   min-height: 35vh;
+}
+/* Change the text link colours in this section only */
+#info a:link {
+    color:var(--shades-dark)
+}
+#info a:visited {
+    color: var(--main-brand);
+}
+/* mouse over effect */
+#info a:hover {
+    color: var(--accent-dark);
+    font-weight: bold;
 }
 
 /* Footer / contact */
@@ -114,7 +127,10 @@ nav {
 /* Add a body background image to screens above 576px wide (bootstrap sm breakpoint) */
 @media screen and (min-width: 576px) {
   body {
-    background: url("../images/mx-track-above-ai.jpg") top / cover no-repeat;
+    /* here we are using layered backgrounds to effectively darken the background by 50% */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+     url("../images/mx-track-above-ai.jpg") top / cover no-repeat;
+   
   }
 }
 /* space out nav links a little on larger screens  */
