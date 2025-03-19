@@ -48,6 +48,11 @@ The suggested colour palette was tested for contrast using the contrast checker 
 | main-brand	| #94b6a6 | #3c574a
 | accent-dark	| #827e7d | #5f5032
 | shades-dark	| #52603d | #204230
+
+## Testing
+Responsive device testing at all stages of development using Firefox Developer tools
+### W3C testing and results
+Results here...
 ## Credits
 Code snippets used from [getbootstrap.com](https://getbootstrap.com/docs/5.3/):
 - Navbar  
