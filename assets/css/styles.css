@@ -33,7 +33,7 @@ h3 {
   color: var(--shades-light);
 }
 .custom-button-filled:hover {
-  border: 2px solid var(--shades-light);
+  border: 2px solid var(--shades-dark);
   background-color: var(--shades-light);
   color: var(--shades-dark);
 }
@@ -87,6 +87,10 @@ nav {
   background-color: var(--shades-light);
   /* min-height to make section stretch towards footer section */
   min-height: 35vh;
+}
+#member-form {
+  /* apply semi-transparent background to form */
+  background-color: rgba(240, 242, 242, 0.65);   
 }
 /* Change the text link colours in this section only */
 #info a:link {
