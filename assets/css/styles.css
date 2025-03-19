@@ -104,6 +104,15 @@ nav {
     color: var(--accent-dark);
     font-weight: bold;
 }
+/* form submission confirmation links box */
+#links-box {
+    border:var(--main-brand) solid 0.4rem;
+    padding: 3%;
+}
+#links-box a {
+    border: var(--main-brand) solid 1px;
+    margin: 3%;
+}
 
 /* Footer / contact */
 #contact {
