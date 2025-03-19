@@ -24,17 +24,6 @@ h3 {
   font-family: var(--secondary-font);
   color: var(--accent-dark);
 }
-#header {
-  background: url("../images/sunset-mx-riders-ai.png") top / cover no-repeat;
-  font-size: 1.2rem;
-}
-/* add a semi-transparent background to the header row so that the darker text is legible against the background image */
-#header .row {
-  background-color: rgba(240, 242, 242, 0.65);
-}
-#header img {
-  padding: 5%;
-}
 
 /* Custom Buttons (instead of using bootstraps button colours) */
 .custom-button-filled {
@@ -50,7 +39,7 @@ h3 {
 .custom-button-outline {
   border: 3px solid var(--accent-dark);
   background-color: var(--shades-light);
-  color: var(--accent-dark);
+  color: var(--accent-dark); 
 }
 .custom-button-outline:hover {
   border: 3px solid var(--accent-dark);
@@ -60,17 +49,37 @@ h3 {
 
 /* Navigation styles */
 nav {
-  background-color: var(--main-brand);
-  color: var(--shades-light);
-}
-nav:hover {
-  color: var(--accent-light);
-}
-/* Override boostrap class to make menu dropdown right aligned */
-.navbar-collapse {
-  margin: 0 auto;
-  text-align: right;
-}
+    background-color: var(--main-brand);
+    color: var(--shades-light);
+    box-shadow: 0.1rem 0.3rem var(--shades-dark);
+  }
+  nav:hover {
+    color: var(--accent-light);
+  }
+  /* Override boostrap class to make menu dropdown right aligned */
+  .navbar-collapse {
+    margin: 0 auto;
+    text-align: right;
+  }
+   /* less rounded buttons to match logo */
+   nav .custom-button-filled,
+   nav .custom-button-filled:hover {
+   border-radius:0.2rem;
+   }
+
+/* Header styles */
+#header {
+    background: url("../images/sunset-mx-riders-ai.png") top / cover no-repeat;
+    font-size: 1.2rem;
+  }
+  /* add a semi-transparent background to the header row so that the darker text is legible against the background image */
+  #header .row {
+    background-color: rgba(240, 242, 242, 0.65);
+    padding-top:0.5rem;
+  }
+  #header img {
+    padding: 5%;
+  }
 
 /* Main section */
 #info {
@@ -107,4 +116,10 @@ nav:hover {
   body {
     background: url("../images/mx-track-above-ai.jpg") top / cover no-repeat;
   }
+}
+/* space out nav links a little on larger screens  */
+@media screen and (min-width: 992px) {
+    .navbar-nav > a {
+        margin-right:0.2rem;
+    }
 }
