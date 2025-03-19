@@ -75,7 +75,8 @@ nav {
   }
   /* add a semi-transparent background to the header row so that the darker text is legible against the background image */
   #header .row {
-    background-color: rgba(240, 242, 242, 0.65);
+    background-color: rgba(240, 242, 242, 0.65);    
+    text-shadow: 1px 1px var(--accent-light);
     padding-top:0.5rem;
   }
   #header img {
