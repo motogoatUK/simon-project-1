@@ -131,6 +131,9 @@ nav .custom-button-filled:hover {
 #results .card {
   margin: 0 auto 1.5rem;
   border: var(--main-brand) solid 1px;
+  /* make results cards height uniform irrespective of image height difference */
+  height:96%;
+  padding-bottom:4px;
 }
 #results .card-title {
   font-family: var(--secondary-font);
