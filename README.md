@@ -85,7 +85,10 @@ Once confirmed, GitHub will build and deploy the site. After a few minutes a lin
 You may need to refresh the page to see it. For this project the link is [https://motogoatUK.github.io/simon-project-1]
 
 ### W3C testing and results
-Results here...
+Failed first test due to having block-level elements inside of ```<p>``` tags. Once these were removed along with adding some missing ```<tr>``` tags in fixtures.html all html files passed validation at [https://validator.w3.org/] without errors.  
+
+The styles.css was checked at [https://jigsaw.w3.org/css-validator/] which it passed as CSS level 3 and issued a badge which I have added to the footer on all pages.
+
 ## Credits
 Code snippets used from [getbootstrap.com](https://getbootstrap.com/docs/5.3/):
 - Navbar used on all pages
