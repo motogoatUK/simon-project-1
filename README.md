@@ -49,13 +49,20 @@ The suggested colour palette was tested for contrast using the contrast checker 
 | accent-dark	| #827e7d | #5f5032
 | shades-dark	| #52603d | #204230
 
+<hr>
+
+I couldn't centre the fixed width cards on the results page where the content was single column (see pic below).  
+I had tried justify-align mx-auto on all the containers to no avail. The nature of the flex containers is to stretch across the allowed column space so fixing the width caused the issue. In the end I managed to keep a fixed width and keep the card centered by changing the card class instruction ```margin-bottom: 1.5rem;``` to ```margin: 0 auto 1.5rem;```
+
+
 ## Testing
-Responsive device testing at all stages of development using Firefox Developer tools
+Responsive device testing at all stages of development using the terminal command ```python -m http.server -b localhost``` and responsive design mode within Firefox developer tools.
 ### W3C testing and results
 Results here...
 ## Credits
 Code snippets used from [getbootstrap.com](https://getbootstrap.com/docs/5.3/):
-- Navbar  
+- Navbar used on all pages
+- Card sections used on results page 
 
 png images optimised by [TinyPNG](https://tinypng.com)  
 

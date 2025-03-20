@@ -114,6 +114,20 @@ nav {
     border: var(--main-brand) solid 1px;
     margin: 3%;
 }
+/* Results page styles */
+/* min-height to make section stretch towards footer section */
+#results {
+    min-height: 52vh;
+    background-color: rgba(240, 242, 242, 0.65);
+    
+}
+#results .row {
+    justify-content: center;
+}
+/* add some vertical space between cards */
+#results .card {
+    margin: 0 auto 1.5rem; 
+}
 
 /* Footer / contact */
 #contact {
