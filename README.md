@@ -51,12 +51,35 @@ The suggested colour palette was tested for contrast using the contrast checker 
 
 <hr>
 
-I couldn't centre the fixed width cards on the results page where the content was single column (see pic below).  
-I had tried justify-align mx-auto on all the containers to no avail. The nature of the flex containers is to stretch across the allowed column space so fixing the width caused the issue. In the end I managed to keep a fixed width and keep the card centered by changing the card class instruction ```margin-bottom: 1.5rem;``` to ```margin: 0 auto 1.5rem;```
+I couldn't centre the fixed width cards on the results page where the content was single column (see left pic below).  
+I had tried justify-align mx-auto on all the containers to no avail. The nature of the flex containers is to stretch across the allowed column space so fixing the width caused the issue. In the end I managed to keep a fixed width and keep the card centered by changing the card class instruction ```margin-bottom: 1.5rem;``` to ```margin: 0 auto 1.5rem;```  
 
+![Results page card issue](assets/images/p1-cards-issue-opt.png)
+<hr>
+
+During testing the following bug was discovered:  
+When clicking on the address box the cursor appeared at a seemingly random location as shown below.
+
+![Address box issue](assets/images/p1-address-text-issue-opt.png)
+
+This was caused by formatting in the join-us.html file and was resolved by closing the ```<textarea>``` tag before the newline.
 
 ## Testing
 Responsive device testing at all stages of development using the terminal command ```python -m http.server -b localhost``` and responsive design mode within Firefox developer tools.
+
+Once deployed, the project was tested using various devices and browsers to certify compatibility.
+
+## Deployment
+
+The below steps are used to deploy the project to Github pages.
+1. login to github and select the repository **motogoatUK/simon-project-1**
+2. From the menu items near the top right select **Settings**
+3. Select the **Pages** from the left hand side menu
+1. Under *Branch* select **main** branch
+1. Select **Save** to confirm  
+Once confirmed, GitHub will build and deploy the site. After a few minutes a link should be shown under the **GitHub Pages** section as shown in the image below.  
+You may need to refresh the page to see it. For this project the link is [https://motogoatUK.github.io/simon-project-1]
+
 ### W3C testing and results
 Results here...
 ## Credits
