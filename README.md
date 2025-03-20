@@ -51,23 +51,27 @@ The suggested colour palette was tested for contrast using the contrast checker 
 
 <hr>
 
-I couldn't centre the fixed width cards on the results page where the content was single column (see left pic below).  
+I spent some time trying to centre the fixed width cards on the results page where the content was single column (see left pic below).  
 I had tried justify-align mx-auto on all the containers to no avail. The nature of the flex containers is to stretch across the allowed column space so fixing the width caused the issue. In the end I managed to keep a fixed width and keep the card centered by changing the card class instruction ```margin-bottom: 1.5rem;``` to ```margin: 0 auto 1.5rem;```  
 
 ![Results page card issue](assets/images/p1-cards-issue-opt.png)
 <hr>
 
-During testing the following bug was discovered:  
+### Bugs discovered during testing:  
 When clicking on the address box the cursor appeared at a seemingly random location as shown below.
 
 ![Address box issue](assets/images/p1-address-text-issue-opt.png)
 
 This was caused by formatting in the join-us.html file and was resolved by closing the ```<textarea>``` tag before the newline.
 
+<hr>
+
+The "Agree to Terms" checkbox on the join-us form was out of alignment. Adding the bootstrap classes form-check and form-check-input brought them onto the correct line and a left margin was added to line the checkbox up with the other input boxes on wider screens.
+
 ## Testing
 Responsive device testing at all stages of development using the terminal command ```python -m http.server -b localhost``` and responsive design mode within Firefox developer tools.
 
-Once deployed, the project was tested using various devices and browsers to certify compatibility.
+Once deployed, the project was tested using various devices including a laptop and mobile phone. On the desktop, browsers Edge, Chrome and Firefox were used to certify compatibility.
 
 ## Deployment
 

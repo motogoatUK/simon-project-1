@@ -15,11 +15,12 @@
     <!--Custom CSS-->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <!--Classes added to body works with mt-auto on footer to ensure it always stays at the bottom of page
 ##  d-flex creates a full-screen width flexbox container ## -->
 <body class="d-flex flex-column min-vh-100">
 <!-- Navigation [ based on code from https://getbootstrap.com/docs/5.3/components/navbar/ ] -->  
-<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
     <div class="container-xxl">
       <a class="navbar-brand" href="index.html">
         <img src="assets/images/bmc-logo.png" alt="Logo" class="d-inline-block align-text-top">
@@ -39,17 +40,18 @@
       </div>
     </div>
   </nav>
-<!-- Header -->
- <header id="header" class="container">
-<div class="row">    
-    <div class="col-12 my-3 text-center">
-        <h1 class="display-3">Browngrass Motocross</h1>
-        <h2>Membership application form</h2>    
-    </div>   
-</div>
- </header> 
-<!-- Main - holds key sections of the page -->
-<main>
+
+  <!-- Header -->
+  <header id="header" class="container">
+    <div class="row">    
+        <div class="col-12 my-3 text-center">
+            <h1 class="display-3">Browngrass Motocross</h1>
+            <h2>Membership application form</h2>    
+        </div>   
+    </div>
+  </header> 
+  <!-- Main - holds key sections of the page -->
+  <main>
     <section id="member-form" class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
@@ -72,14 +74,15 @@
                             <label for="race-number" class="form-label">Race Number:</label>
                             <input type="number" class="form-control" id="race-number" name="race-number" max="999" aria-required="false">
                         </div>
-                            <p>
+                        <p>
                             Club terms and conditions:<br>
                             All fields marked * above have been filled in honestly and correctly<br>
                             Members must agree to read and follow all club rules issued upon registration.
-                            </p>
-                            <input type="checkbox" name="member-terms" id="member-terms" required aria-required="true">
-                            <label for="member-terms">I agree to the above Terms and Conditions</label>
-                            <br>                        
+                        </p> 
+                        <div class="form-check">
+                            <label for="member-terms" class="form-check-label">I agree to the above Terms and Conditions</label>                                          
+                            <input type="checkbox" class="form-check-input" name="member-terms" id="member-terms" required aria-required="true">           
+                        </div>                        
                     </div>
                     <input type="submit" class="btn custom-button-filled my-4" value="Apply">
                     <input type="reset" class="btn custom-button-outline mx-4" value="Clear Form">
@@ -87,10 +90,10 @@
             </div>
         </div>
     </section>
-</main>
-<!-- Footer / Contact section -->
-<!-- mt-auto added to push footer to the bottom of the page -->
-<footer id="contact" class="mt-auto">
+  </main>
+  <!-- Footer / Contact section -->
+  <!-- mt-auto added to push footer to the bottom of the page -->
+  <footer id="contact" class="mt-auto">
     <div class="container-xxl">
     <h3>Get in touch!</h3>
     <!-- Hide icons from screen readers and show text instead using FontAwesome's built-in fa-sr-only class -->
@@ -118,12 +121,12 @@
             <i aria-hidden="true" class="fa-brands fa-x-twitter"></i><span class="fa-sr-only">Our X[Twitter] account (opens in new tab)</span></a>
     </div>
     </div>
-</footer>
-<!-- JS Scripts go here so that page loads first (DOM) -->
-<!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </footer>
+  <!-- JS Scripts go here so that page loads first (DOM) -->
+  <!--Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/dfd0bfb19f.js" crossorigin="anonymous"></script>
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/dfd0bfb19f.js" crossorigin="anonymous"></script>
 </body>
 </html>
