@@ -92,8 +92,17 @@ nav .custom-button-filled:hover {
   /* apply semi-transparent background to form */
   background-color: rgba(240, 242, 242, 0.65);
 }
+#member-form .form-control ,
+#member-form .form-check-input {
+    /* override bootstrap border colour on form for legibility */
+    border-color: var(--accent-light);
+}
+/* Change checked box to site colours */
+#member-form .form-check-input:checked {
+    background-color: var(--shades-dark);
+}
 /* Adjust margin to line up check box with other input boxes */
-#member-form .form-check {
+#member-form .form-check{
   margin-left: 0.75rem;
 }
 /* Change the text link colours in this section only */

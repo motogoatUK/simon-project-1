@@ -85,6 +85,18 @@ The "Agree to Terms" checkbox on the join-us form was out of alignment. Adding t
 
 After testing and getting a CSS3 badge to display, I added it to each footer and committed the changes. I then realised the supplied badge code contained an external link, so I had to add in the _blank target and noreferer options. Upon committing these changes and testing it was found that the links didn't work as intended so I removed the noreferer option and re-tested. This also failed to work so I decided to rollback the changes using git reset. I then modified the links to work satisfactorily.
 
+<hr>
+
+Following user testing it was decided an email field would be needed on the membership application form, also the checkbox for the terms and conditions was difficult to see.  
+An email field was then added to the user form and the colours of the field borders overridden with some css to match the sites colour palette.  
+These changes were checked via the W3C validator and tested for responsiveness and then the updates were deployed. The following additional unit testing was done on the form: 
+
+| Test Case | Expected Outcome | Actual Outcome | Pass/Fail |
+|-----------|----------------|---------------|----------| 
+| form submission with a blank email address | Error appears near email field, form not submitted | Error shown near email field, form not submitted | Pass |
+| form submission with an invalid email address | Error appears near email field, form not submitted | Error shown near email field, form not submitted | Pass |
+| form submission with all required fields filled correctly | Form submits successfully and redirects to the success page | Form submits as expected | Pass |
+
 ## Deployment and Testing
 Responsive device testing at all stages of development using the terminal command ```python -m http.server -b localhost``` and responsive design mode within Firefox developer tools.
 
@@ -97,7 +109,7 @@ The styles.css was checked at [https://jigsaw.w3.org/css-validator/](https://jig
 
 
 
- ### Manual Testing - Membership application form validation
+ ### Form testing - Membership application form validation
 
 
 | Test Case | Expected Outcome | Actual Outcome | Pass/Fail |
