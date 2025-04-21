@@ -49,12 +49,24 @@ h3 {
 
 /* Navigation styles */
 nav {
-  background-color: var(--main-brand);
-  color: var(--shades-light);
+  background-color: var(--main-brand);  
   box-shadow: 0.1rem 0.3rem var(--shades-dark);
 }
-nav:hover {
+/* The following 3 styles override bootstrap nav-link colours */
+.nav-link { color: var(--shades-light);
+}
+.navbar-nav .nav-link.active { color: var(--accent-light);
+}
+.nav-link:hover {
   color: var(--accent-light);
+}
+.navbar-nav .btn.active {
+  color:var(--accent-light);
+  background-color: var(--accent-dark);
+  border-color: var(--shades-dark);
+}
+.nav-link.active {
+  font-weight: bold;
 }
 /* Override boostrap class to make menu dropdown right aligned */
 .navbar-collapse {
