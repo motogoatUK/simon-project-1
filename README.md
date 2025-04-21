@@ -150,24 +150,46 @@ The project can be worked on locally by cloning the repository
 ![mock-up image of deployed project](assets/images/dc-p1-mockup-opt.png)
 #### User story:
 As a First-Time Visitor, I need easy navigation and a user-friendly design, including a responsive layout for my device, so I can find information quickly and efficiently without frustration. 
-Acceptance Criteria
 
- - [x] The website is fully responsive across various devices and screen sizes.
- - [x] Site layout and navigation are intuitive, allowing easy access to different sections.
+ - ✅ The website is fully responsive across various devices and screen sizes.
+ - ✅ Site layout and navigation are intuitive, allowing easy access to different sections. 
+
+(see screenshot above) 
+
+----- 
+
 #### User story:
 As a spectator I want to find information about upcoming events so that I can plan which events I can attend. 
- - [x] Fixture list in date order added as seperate page
+ - ✅ Fixture list in date order added as seperate page 
+
+ ![screenshot of fixtures page](assets/images/dc-p1-ss-fixtures.png)
+ ----- 
+
 #### User Story:
 As a supporter I want to be able to read news on the club website so that I can keep up to date with progress 
- - [x]  News section clearly visible on Homepage
+ - ✅ News section clearly visible on Homepage 
+
+ ![screenshot of fixtures page](assets/images/dc-p1-ss-news.png) 
+
+ ----- 
+
 #### User Story:
 As a rider I want to join a club so I can take part in events 
- - [x]  Membership form clearly accessible from all pages
- - [x] Membership form responsive on all device sizes
- - [x] Confirmation and further information after submitting form
+ - ✅ Membership form clearly accessible from all pages
+ - ✅ Membership form responsive on all device sizes
+ - ✅ Confirmation and further information after submitting form 
+
+ ![screenshot of fixtures page](assets/images/dc-p1-ss-membership.png) 
+
+ ----- 
+
 #### User story:
 As a riding member I want to see the previous race event results so that I can see where I placed and can plan my next race strategy.
-  - [x] Results page with results laid out clearly and responsively
+ - ✅ Results page with results laid out clearly and responsively 
+
+ ![screenshot of fixtures page](assets/images/dc-p1-ss-results.png) 
+
+-----
 
 ## Credits
 Code snippets used from [getbootstrap.com](https://getbootstrap.com/docs/5.3/):
