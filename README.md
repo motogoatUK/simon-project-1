@@ -107,6 +107,8 @@ Failed first test due to having block-level elements inside of ```<p>``` tags. O
 
 The styles.css was checked at [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/) which it passed as CSS level 3 and issued a badge which I have added to the footer on all pages.
 
+A video was later linked into the news &amp; information section via Youtube's share button. Further W3C checks were performed during subsequent re-testing and an error was discovered. The supplied HTML snippet contained an obsolete "frameborder" element. This was removed and CSS added instead. Final checks all passed.
+
 
 
  ### Form testing - Membership application form validation

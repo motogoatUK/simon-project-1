@@ -100,6 +100,11 @@ nav .custom-button-filled:hover {
   /* min-height to make section stretch towards footer section */
   min-height: 35vh;
 }
+#mx-start-video {
+  min-height:590px;
+  border:none;
+}
+
 #member-form {
   /* apply semi-transparent background to form */
   background-color: rgba(240, 242, 242, 0.65);
